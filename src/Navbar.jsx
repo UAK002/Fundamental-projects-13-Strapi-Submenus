@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav>
       <div className="nav-center">
         <h3 className="logo">strapi</h3>
-        <button className="toggle-btn">
+        <button className="toggle-btn" onClick={openSidebar}>
           <FaBars />
         </button>
         {/* Nav links Later */}
