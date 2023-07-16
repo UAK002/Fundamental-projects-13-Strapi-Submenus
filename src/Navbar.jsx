@@ -1,0 +1,19 @@
+import { FaBars } from 'react-icons/fa';
+import useGlobalContext from './Context';
+
+const Navbar = () => {
+  const { openSidebar } = useGlobalContext();
+
+  return (
+    <nav>
+      <div className="nav-center">
+        <h3 className="logo">strapi</h3>
+        <button className="toggle-btn">
+          <FaBars />
+        </button>
+        {/* Nav links Later */}
+      </div>
+    </nav>
+  );
+};
+export default Navbar;
