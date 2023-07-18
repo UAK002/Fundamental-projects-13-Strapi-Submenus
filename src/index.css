@@ -676,7 +676,8 @@ nav {
   .submenu {
     display: block;
     position: fixed;
-    top: 6rem;
+    top: 7rem;
+    /* top: 4rem; */
     width: var(--fluid-width);
     max-width: var(--max-width);
     background: var(--white);
@@ -690,12 +691,14 @@ nav {
     visibility: hidden;
     opacity: 0;
     transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    z-index: -1;
   }
   .show-submenu {
     visibility: visible;
     opacity: 1;
     /* transform: rotate(0deg) translateX(-50%); */
     transform: rotateX(0deg) translateX(-50%);
+    z-index: 10;
   }
   .submenu h5 {
     margin-bottom: 1rem;
